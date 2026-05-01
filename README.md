@@ -65,9 +65,8 @@
 
 ## 🧩 Projetos em destaque
 
-- 🔗 API REST com autenticação JWT + Prisma  
-- 🔗 Sistema de cadastro multi-empresa  
-- 🔗 Integração com APIs externas  
+<!-- AUTO-PROJECTS:START -->
+<!-- AUTO-PROJECTS:END -->
 
 ---
 
