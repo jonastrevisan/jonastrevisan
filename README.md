@@ -66,6 +66,7 @@
 ## 🧩 Projetos em destaque
 
 <!-- AUTO-PROJECTS:START -->
+
 <!-- AUTO-PROJECTS:END -->
 
 ---
