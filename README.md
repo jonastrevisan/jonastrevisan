@@ -45,13 +45,15 @@
 ## 📊 Estatísticas e Contribuições
 
 <p align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=jonastrevisan&show_icons=true&count_private=true&theme=tokyonight&hide_border=true"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=jonastrevisan&layout=compact&theme=tokyonight&hide_border=true&langs_count=8"/>
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=jonastrevisan&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true" alt="Estatísticas do GitHub" />
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=jonastrevisan&layout=compact&theme=tokyonight&langs_count=8" alt="Linguagens mais usadas" />
 </p>
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=jonastrevisan&theme=tokyonight&hide_border=true"/>
+  <img src="https://streak-stats.demolab.com?user=jonastrevisan&theme=tokyonight" alt="GitHub Streak" />
 </p>
+
+
 
 ---
 
