@@ -67,6 +67,8 @@
 
 <!-- AUTO-PROJECTS:START -->
 
+- 🔗 [jonastrevisan](https://github.com/jonastrevisan/jonastrevisan) - Sem descrição
+- 🔗 [curso-de-react](https://github.com/jonastrevisan/curso-de-react) - Sem descrição
 <!-- AUTO-PROJECTS:END -->
 
 ---
