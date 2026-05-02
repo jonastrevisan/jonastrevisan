@@ -1,68 +1,72 @@
-name: Auto Update Projects
+name: Auto Update Profile
 
 on:
   schedule:
     - cron: "0 */6 * * *"
   workflow_dispatch:
+  push:
+    branches: [main]
 
 permissions:
   contents: write
 
 jobs:
-  update-readme:
+  update-profile:
     runs-on: ubuntu-latest
 
     steps:
       - name: 📥 Checkout repo
         uses: actions/checkout@v4
 
+      # --- ETAPA 1: GERA A COBRINHA ---
+      - name: 🐍 Generate Snake
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: jonastrevisan
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # --- ETAPA 2: ATUALIZA PROJETOS ---
       - name: 🧰 Install dependencies
         run: sudo apt-get update && sudo apt-get install -y jq
 
-      - name: 📡 Fetch repositories
+      - name: 📡 Fetch and Generate Projects
         run: |
           curl -s https://api.github.com/users/jonastrevisan/repos?per_page=100 > repos.json
-
-      - name: 🧠 Generate project list
-        run: |
           echo "" > projects.md
-
           cat repos.json | jq -r '
             sort_by(.updated_at) | reverse |
             .[] |
-            select(.fork == false and .archived == false) |
-            select(.description != null) |
-            "- 🔗 [" + .name + "](" + .html_url + ") - " + .description
+            select(.fork == false and .archived == false and .name != "jonastrevisan") |
+            "- 🔗 **[\(.name)](\(.html_url))** - \(.description // "Fullstack Project")"
           ' | head -n 5 >> projects.md
 
-      - name: ✍️ Update README
+      - name: ✍️ Update README Content
         run: |
-          awk '
-          /<!-- AUTO-PROJECTS:START -->/ {
-            print;
-            while ((getline line < "projects.md") > 0) print line;
-            close("projects.md");
-            skip=1;
-            next
-          }
-          /<!-- AUTO-PROJECTS:END -->/ {
-            skip=0
-          }
-          !skip { print }
-          ' README.md > README.new
+          # Usa sed para limpar o que está entre as tags e injetar o novo conteúdo
+          sed -i '/<!-- AUTO-PROJECTS:START -->/,/<!-- AUTO-PROJECTS:END -->/ { /<!-- AUTO-PROJECTS:START -->/! { /<!-- AUTO-PROJECTS:END -->/! d } }' README.md
+          sed -i '/<!-- AUTO-PROJECTS:START -->/r projects.md' README.md
 
-          mv README.new README.md
-
-      - name: 🚀 Commit & push if changed
+      # --- ETAPA 3: COMMIT E PUSH ---
+      - name: 🚀 Push Changes
         run: |
           git config user.name "jonastrevisan"
           git config user.email "trevisanjonas@gmail.com"
-
           git add README.md
-
           if git diff --cached --quiet; then
-            echo "No changes"
+            echo "No changes in README"
           else
             git commit -m "🤖 auto update projects"
             git push
           fi
+
+      - name: 📤 Push Snake to Output Branch
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
