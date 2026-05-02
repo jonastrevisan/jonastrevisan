@@ -42,24 +42,28 @@
 
 ---
 
-## 📈 Atividade & Contribuições
+## 📊 Estatísticas e Contribuições
 
 <p align="center">
-  <!-- Gráfico da Cobrinha (Snake) - Requer que o YAML rode primeiro para gerar na branch output -->
-  <img src="https://raw.githubusercontent.com/jonastrevisan/jonastrevisan/output/github-contribution-grid-snake.svg" alt="Snake animation" />
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=jonastrevisan&show_icons=true&count_private=true&theme=tokyonight&hide_border=true"/>
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=jonastrevisan&layout=compact&theme=tokyonight&hide_border=true&langs_count=8"/>
 </p>
+
+<p align="center">
+  <img src="https://streak-stats.demolab.com?user=jonastrevisan&theme=tokyonight&hide_border=true"/>
+</p>
+
+---
+
+## 📈 Atividade
 
 <p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=jonastrevisan&theme=tokyo-night&hide_border=true"/>
 </p>
 
----
-
-## 📊 Estatísticas
-
 <p align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=jonastrevisan&show_icons=true&count_private=true&theme=tokyonight&hide_border=true"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=jonastrevisan&layout=compact&theme=tokyonight&hide_border=true&langs_count=8"/>
+  <!-- Gráfico da Cobrinha (Snake) -->
+  <img src="https://raw.githubusercontent.com/jonastrevisan/jonastrevisan/output/github-contribution-grid-snake.svg" alt="Snake animation" />
 </p>
 
 ---
@@ -67,8 +71,7 @@
 ## 🧩 Projetos em destaque
 
 <!-- AUTO-PROJECTS:START -->
-
-- 🔗 **[curso-de-react](https://github.com/jonastrevisan/curso-de-react)** - Fullstack Project
+<!-- O seu YAML irá injetar a lista de projetos aqui -->
 <!-- AUTO-PROJECTS:END -->
 
 ---
@@ -89,13 +92,12 @@
   <a href="https://www.linkedin.com/in/jonas-trevisan-994a1a65">
     <img src="https://img.shields.io/badge/LinkedIn-Jonas%20Trevisan-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
   </a>
-  <a href="mailto:trevisanjonas@gmail.com">
-    <img src="https://img.shields.io/badge/Gmail-trevisanjonas%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
-  </a>
 </p>
+
+📧 trevisanjonas@gmail.com  
 
 ---
 
 <p align="right">
-  <i>Última atualização: 02 de maio de 2026 🗓️</i>
+  <i>Automated with ❤️ by GitHub Actions</i>
 </p>
