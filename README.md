@@ -67,7 +67,8 @@
 ## 🧩 Projetos em destaque
 
 <!-- AUTO-PROJECTS:START -->
-<!-- O seu YAML irá injetar a lista de projetos aqui -->
+
+- 🔗 **[curso-de-react](https://github.com/jonastrevisan/curso-de-react)** - Fullstack Project
 <!-- AUTO-PROJECTS:END -->
 
 ---
