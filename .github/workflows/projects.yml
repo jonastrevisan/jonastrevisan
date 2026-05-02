@@ -8,6 +8,9 @@ on:
 permissions:
   contents: write
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   update-readme:
     runs-on: ubuntu-latest
@@ -31,27 +34,30 @@ jobs:
             sort_by(.updated_at) | reverse |
             .[] |
             select(.fork == false and .archived == false) |
-            select(.description != null) |
-            "- 🔗 [" + .name + "](" + .html_url + ") - " + .description
+            "- 🔗 [" + .name + "](" + .html_url + ") - " + (.description // "Sem descrição")
           ' | head -n 5 >> projects.md
 
       - name: ✍️ Update README
         run: |
-          awk '
-          /<!-- AUTO-PROJECTS:START -->/ {
-            print;
-            while ((getline line < "projects.md") > 0) print line;
-            close("projects.md");
-            skip=1;
-            next
-          }
-          /<!-- AUTO-PROJECTS:END -->/ {
-            skip=0
-          }
-          !skip { print }
-          ' README.md > README.new
+          START="<!-- AUTO-PROJECTS:START -->"
+          END="<!-- AUTO-PROJECTS:END -->"
 
-          mv README.new README.md
+          CONTENT=$(cat projects.md)
+
+          awk -v start="$START" -v end="$END" -v content="$CONTENT" '
+          $0 ~ start {
+              print
+              print content
+              skip=1
+              next
+          }
+          $0 ~ end {
+              skip=0
+          }
+          !skip
+          ' README.md > README.tmp
+
+          mv README.tmp README.md
 
       - name: 🚀 Commit & push if changed
         run: |
@@ -66,3 +72,4 @@ jobs:
             git commit -m "🤖 auto update projects"
             git push
           fi
+    
