@@ -42,20 +42,23 @@
 
 ---
 
-## 📊 Estatísticas e Contribuições
+## 📊 Estatísticas & Badges
 
 <p align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=jonastrevisan&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true" alt="Estatísticas do GitHub" />
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=jonastrevisan&layout=compact&theme=tokyonight&langs_count=8" alt="Linguagens mais usadas" />
+  <!-- Badges de Status Real (Não caem, pois usam shields.io que é ultra estável) -->
+  <img src="https://img.shields.io/github/followers/jonastrevisan?label=Followers&style=for-the-badge&color=00F7FF&logo=github" />
+  <img src="https://img.shields.io/github/stars/jonastrevisan?label=Total%20Stars&style=for-the-badge&color=00F7FF&logo=reverbnation" />
+  <img src="https://img.shields.io/github/repo-size/jonastrevisan/jonastrevisan?label=Profile%20Size&style=for-the-badge&color=00F7FF&logo=github" />
 </p>
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=jonastrevisan&theme=tokyonight" alt="GitHub Streak" />
+  <!-- Se os servidores voltarem, estes cards aparecerão. Se não, os badges acima garantem o visual -->
+  <img height="160em" src="https://github-readme-stats-sigma-five.vercel.app/api?username=jonastrevisan&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true" />
+  <img height="160em" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=jonastrevisan&layout=compact&theme=tokyonight&hide_border=true&langs_count=6" />
 </p>
-
-
 
 ---
+
 
 ## 📈 Atividade
 
