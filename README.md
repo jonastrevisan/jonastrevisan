@@ -77,8 +77,8 @@
 
 <!-- AUTO-PROJECTS:START -->
 
-- 🔗 **[barber-front](https://github.com/jonastrevisan/barber-front)** - Fullstack Project
-- 🔗 **[barber-back](https://github.com/jonastrevisan/barber-back)** - Fullstack Project
+- 🔗 **[agenda-front](https://github.com/jonastrevisan/agenda-front)** - Fullstack Project
+- 🔗 **[agenda-back](https://github.com/jonastrevisan/agenda-back)** - Fullstack Project
 - 🔗 **[curso-de-react](https://github.com/jonastrevisan/curso-de-react)** - Fullstack Project
 <!-- AUTO-PROJECTS:END -->
 
