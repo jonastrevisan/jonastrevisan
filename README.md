@@ -77,8 +77,8 @@
 
 <!-- AUTO-PROJECTS:START -->
 
-- 🔗 **[agenda-front](https://github.com/jonastrevisan/agenda-front)** - Fullstack Project
 - 🔗 **[agenda-back](https://github.com/jonastrevisan/agenda-back)** - Fullstack Project
+- 🔗 **[agenda-front](https://github.com/jonastrevisan/agenda-front)** - Fullstack Project
 - 🔗 **[curso-de-react](https://github.com/jonastrevisan/curso-de-react)** - Fullstack Project
 <!-- AUTO-PROJECTS:END -->
 
