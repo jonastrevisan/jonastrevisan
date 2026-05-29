@@ -77,6 +77,7 @@
 
 <!-- AUTO-PROJECTS:START -->
 
+- 🔗 **[curso-de-react](https://github.com/jonastrevisan/curso-de-react)** - Fullstack Project
 <!-- AUTO-PROJECTS:END -->
 
 ---
