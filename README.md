@@ -19,7 +19,7 @@ Desenvolvo APIs escaláveis, integrações e aplicações de dados para a indús
 
 **Backend**
 
-<img src="https://skillicons.dev/icons?i=nodejs,ts,nestjs,fastify,java,spring,cs,dotnet" />
+<img src="https://skillicons.dev/icons?i=nodejs,ts,nestjs,java,spring,cs,dotnet" />
 
 **Frontend**
 
