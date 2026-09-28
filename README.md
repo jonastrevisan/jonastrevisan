@@ -1,10 +1,8 @@
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?size=28&duration=3000&color=00F7FF&center=true&vCenter=true&width=800&lines=Jonas+Trevisan;Full+Stack+Software+Engineer;Node.js+%7C+Java+%7C+C%23+%7C+Angular;APIs+Escal%C3%A1veis+%26+Integra%C3%A7%C3%B5es" />
-</p>
+# Jonas Trevisan
 
-<p align="center">
-  Desenvolvedor Full Stack • APIs escaláveis • Integrações • Backend & Frontend
-</p>
+**Full Stack Software Engineer** · Node.js · Java · C# · Angular
+
+Desenvolvo APIs escaláveis, integrações e aplicações de dados para a indústria.
 
 ---
 
@@ -47,19 +45,6 @@
 
 - 🔗 **[curso-de-react](https://github.com/jonastrevisan/curso-de-react)** - Fullstack Project
 <!-- AUTO-PROJECTS:END -->
-
----
-
-## Estatísticas
-
-<p align="center">
-  <img height="160em" src="https://github-readme-stats.vercel.app/api?username=jonastrevisan&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true" />
-  <img height="160em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=jonastrevisan&layout=compact&theme=tokyonight&hide_border=true&langs_count=6" />
-</p>
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/jonastrevisan/jonastrevisan/output/github-contribution-grid-snake.svg" alt="Snake animation" />
-</p>
 
 ---
 
